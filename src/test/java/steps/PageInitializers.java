@@ -9,6 +9,7 @@ public class PageInitializers {
     public static AddEmployeesPage addEmployeesPage;
     public static EmployeeSearchPage employeeSearchPage;
     public static EmployeeDetailPage employeeDetailPage;
+    public static EmployeeInfoPage employeeInfoPage;
 
 
     public static void initializePageObjects(){
@@ -18,5 +19,6 @@ public class PageInitializers {
         addEmployeesPage = new AddEmployeesPage();
         employeeSearchPage = new EmployeeSearchPage();
         employeeDetailPage = new EmployeeDetailPage();
+        employeeInfoPage = new EmployeeInfoPage();
     }
 }
