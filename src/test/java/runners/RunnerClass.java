@@ -12,11 +12,11 @@ import org.junit.runner.RunWith;
 
         glue = "steps",
 
-        dryRun = false,
+        dryRun = true,
 
         monochrome = true,
 
-        tags = "@test",
+        tags = "@addEmployees",
 
         plugin = {"html:target/cucumber.html", "pretty", "json:target/cucumber.json", "rerun:target/failed.txt"}
 )

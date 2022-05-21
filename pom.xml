@@ -74,7 +74,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>CucumberFrameworkBatch12</projectName>
+                            <projectName>CucumberProjectPractice</projectName>
                             <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
 
                             <!-- output directory for the generated report -->

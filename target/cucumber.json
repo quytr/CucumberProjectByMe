@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters valid admin credentials",
+            "match": {
+              "location": "steps.LoginSteps.user_enters_valid_admin_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "admin user is successfully logged in",
+            "match": {
+              "location": "steps.LoginSteps.admin_user_is_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on PIM option",
+            "match": {
+              "location": "steps.AddEmployeesSteps.user_clicks_on_pim_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on add employee option",
+            "match": {
+              "location": "steps.AddEmployeesSteps.user_click_on_add_employee_option()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-21T03:36:51.219Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.start()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Adding multiple employees from excel file",
+        "description": "",
+        "id": "adding-employees-in-hrms-application;adding-multiple-employees-from-excel-file",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "user adds multiple employees from excel file using \"EmployeeData\" sheet and verify the employee added",
+            "match": {},
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addEmployees"
+          }
+        ]
+      }
+    ],
+    "name": "Adding Employees in HRMS Application",
+    "description": "",
+    "id": "adding-employees-in-hrms-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddEmloyees.feature",
+    "tags": []
+  }
+]

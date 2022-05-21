@@ -9,15 +9,13 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
 
-        features = "src/test/resources/features",
+        features = "@target/failed.text",
 
         glue = "steps",
 
         dryRun = false,
 
         monochrome = true,
-
-        tags = "@test",
 
         plugin = {"pretty"}
 )

@@ -27,7 +27,7 @@ public class CommonMethods extends PageInitializers {
 
         ConfigReader.readProperties(Constants.CONFIGURATION_FILEPATH);
 
-        switch(ConfigReader.getPropertyValue("broswer")){
+        switch(ConfigReader.getPropertyValue("browser")){
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
