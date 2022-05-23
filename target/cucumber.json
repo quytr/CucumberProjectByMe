@@ -3,71 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user enters valid admin credentials",
-            "match": {
-              "location": "steps.LoginSteps.user_enters_valid_admin_credentials()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "steps.LoginSteps.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "admin user is successfully logged in",
-            "match": {
-              "location": "steps.LoginSteps.admin_user_is_successfully_logged_in()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks on PIM option",
-            "match": {
-              "location": "steps.AddEmployeesSteps.user_clicks_on_pim_option()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click on add employee option",
-            "match": {
-              "location": "steps.AddEmployeesSteps.user_click_on_add_employee_option()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-05-21T03:36:51.219Z",
+        "start_timestamp": "2022-05-22T23:33:45.506Z",
         "before": [
           {
             "result": {
@@ -79,10 +15,10 @@
             }
           }
         ],
-        "line": 17,
-        "name": "Adding multiple employees from excel file",
+        "line": 4,
+        "name": "As an admin user should be able to add different memberships under qualifications",
         "description": "",
-        "id": "adding-employees-in-hrms-application;adding-multiple-employees-from-excel-file",
+        "id": "adding-different-memberships-under-qualifications;as-an-admin-user-should-be-able-to-add-different-memberships-under-qualifications",
         "after": [
           {
             "result": {
@@ -98,26 +34,75 @@
         "steps": [
           {
             "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid admin credentials",
+            "match": {
+              "location": "steps.LoginSteps.user_enters_valid_admin_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
               "status": "undefined"
             },
-            "line": 18,
-            "name": "user adds multiple employees from excel file using \"EmployeeData\" sheet and verify the employee added",
+            "line": 7,
+            "name": "user clicks on Admin option",
             "match": {},
             "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigates to Membership page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters any memberships in Name field",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "memberships name is added successfully",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@addEmployees"
+            "name": "@userstory13"
           }
         ]
       }
     ],
-    "name": "Adding Employees in HRMS Application",
+    "name": "Adding different memberships under qualifications",
     "description": "",
-    "id": "adding-employees-in-hrms-application",
+    "id": "adding-different-memberships-under-qualifications",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AddEmloyees.feature",
+    "uri": "file:src/test/resources/features/AddMembership.feature",
     "tags": []
   }
 ]

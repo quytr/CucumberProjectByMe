@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 
         monochrome = true,
 
-        tags = "@addEmployees",
+        tags = "@userstory13",
 
         plugin = {"html:target/cucumber.html", "pretty", "json:target/cucumber.json", "rerun:target/failed.txt"}
 )

@@ -22,6 +22,9 @@ public class EmployeeSearchPage extends CommonMethods {
     @FindBy(xpath = "//table[@id='resultTable']/tbody/tr/td[2]")
     public WebElement empIDNumber;
 
+    @FindBy(xpath = "//table[@id='resultTable']/tbody/tr[1]/td[2]")
+    public WebElement employeeTableTestSubject;
+
     public EmployeeSearchPage(){
         PageFactory.initElements(driver,this);
     }

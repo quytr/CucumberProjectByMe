@@ -12,6 +12,16 @@ import java.util.List;
 
 public class MembershipOptionsSteps extends CommonMethods {
 
+    @When("user navigates to Employee List page")
+    public void user_navigates_to_employee_list_page() {
+        click(employeeSearchPage.pimOption);
+    }
+
+    @When("user clicks on the first Employee within table")
+    public void user_clicks_on_the_first_employee_within_table() {
+        click(employeeSearchPage.employeeTableTestSubject);
+    }
+
     @When("user navigates to View Memberships page")
     public void user_navigates_to_view_memberships_page() {
 

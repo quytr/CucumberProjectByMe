@@ -10,10 +10,9 @@ public class PersonalDetailsPage extends CommonMethods {
     @FindBy(xpath = "//ul[@id='sidenav']/li[11]")
     public WebElement membershipOption;
 
-    public PersonalDetailsPage(){
-        PageFactory.initElements(driver,this);
+    public PersonalDetailsPage() {
+        PageFactory.initElements(driver, this);
     }
-
 
 
 }
